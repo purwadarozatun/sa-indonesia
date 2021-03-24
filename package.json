@@ -2,9 +2,15 @@
   "name": "sa-indonesia",
   "version": "0.0.1",
   "description": "list indonesia province in node js and typeorm ",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": "git@github.com:purwadarozatun/sa-indonesia.git",
   "author": "theakistea <purwadarozatunakis@gmail.com>",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "license": "MIT",
   "dependencies": {
     "@types/node": "^14.14.35",
